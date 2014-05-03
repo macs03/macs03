@@ -5,29 +5,109 @@ route66 = #424242
 steady = #E9E9E9
 BC = #BCBCBC
 Gameblue = #3299BB
+@font-face {
+	font-family: 'macs';
+	src:url('../fonts/macs.eot?-3yhm04');
+	src:url('../fonts/macs.eot?#iefix-3yhm04') format('embedded-opentype'),
+		url('../fonts/macs.woff?-3yhm04') format('woff'),
+		url('../fonts/macs.ttf?-3yhm04') format('truetype'),
+		url('../fonts/macs.svg?-3yhm04#macs') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
 
-.vita 
-	background VitaminC
-	width 20px
-	height 20px
-	display inline-block
-.route
-	background route66
-	width 20px
-	height 20px
-	display inline-block
-.steady
+a
+	color BC
+	text-decoration none
+
+body
 	background steady
-	width 20px
-	height 20px
-	display inline-block
-.bc 
-	background BC
-	width 20px
-	height 20px
-	display inline-block
-.game 
+	color route66
+	font-family 'Open-Sans', sans-serif
+	font-size 16px
+nav
 	background Gameblue
-	width 20px
-	height 20px
-	display inline-block
+	border-bottom solid 1px route66
+	border-top solid 2px route66
+	overflow hidden
+	.menu
+		height 40px
+		line-height 40px
+		margin 0
+		overflow-x auto
+		padding 0
+		white-space nowrap
+
+		&::-webkit-scrollbar
+			display none
+	
+		li
+			display inline-block
+			a
+				padding .3em
+				text-transform uppercase
+			&:hover
+				background VitaminC
+
+footer
+	background Gameblue
+	color BC
+	overflow hidden
+	position relative
+ul 
+	list-style none
+.round
+	border-radius 50%
+	overflow hidden
+.center
+	text-align center
+.fondo
+	position relative
+	text-align center
+.avatar
+	left 40%
+	position absolute
+	top 30%
+.blog
+	background route66
+	border-radius 5px 
+	margin .5em auto
+	width 100px
+	&:hover
+		background VitaminC
+.volver
+	float rigth
+	position absolute
+	right 0
+	top .3em
+.vol 
+	&:before
+		color BC
+		content: "\e600"
+		font-family macs
+		font-size 1.5em
+		margin 0 .5em 0 0 
+.Twitter
+	padding 2px
+	&:before
+		color route66
+		content: "\e608"
+		font-family macs
+		font-size 3em
+		padding 0 0 1em 0
+.Facebook
+	&:before
+		color route66
+		content: "\e607"
+		font-family macs
+		font-size 3em
+#about 
+#description
+#contratame
+	border-bottom solid 1px route66
+
+#formacion
+#trabajos
+#futuro
+#tecnologies
+	border-bottom solid 1px route66
