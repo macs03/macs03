@@ -19,6 +19,9 @@ Gameblue = #3299BB
 a
 	color BC
 	text-decoration none
+	
+a:link
+	text-decoration none
 
 body
 	background steady
@@ -52,13 +55,15 @@ nav
 					color route66
 					background VitaminC
 		
-				
+h3
+	font-size 1.15em				
 
 footer
 	background Gameblue
 	color BC
 	overflow hidden
 	position relative
+	z-index: 1
 ul 
 	list-style none
 .round
@@ -72,9 +77,11 @@ ul
 	position relative
 	text-align center
 .avatar
-	left 40%
 	position absolute
-	top 30%
+	top: 10%;
+	left: 26%;
+	right: 25%;
+	bottom: 20%;
 .blog
 	background route66
 	border-radius 5px 
@@ -83,14 +90,17 @@ ul
 	a
 		padding 0 1.3em
 		border-radius 5px
-		&:hover
-			background VitaminC
-			color route66
+	&:hover
+		background VitaminC
+		color route66
 .volver
 	float rigth
 	position absolute
 	right 0
 	top .3em
+	display none
+	top 92%
+	z-index: 2
 .vol 
 	&:before
 		color BC
@@ -129,9 +139,18 @@ ul
 		font-family macs
 		font-size 3em
 .contra
+	padding 0
 	li
 		display inline-block
 		padding .8em 1em
+.padding-lista
+	padding 0 0 0 20px
+
+.lista-proyectos
+	a
+		color route66
+	li
+		padding .5em 0
 
 #about 
 #description
