@@ -54,6 +54,7 @@ nav
 				&:hover
 					color route66
 					background VitaminC
+
 		
 h3
 	font-size 1.15em				
@@ -66,6 +67,22 @@ footer
 	z-index: 1
 ul 
 	list-style none
+	
+aside
+	background Gameblue
+	width 300px
+	height 100%
+	position: fixed
+	ul
+		li
+			padding 1em 0
+			width 80%
+			text-align center
+			&:hover
+				background VitaminC
+	a:focus
+		li
+			background VitaminC
 .round
 	border-radius 50%
 	overflow hidden
@@ -82,6 +99,8 @@ ul
 	left: 26%;
 	right: 25%;
 	bottom: 20%;
+.avatar2
+	padding 2em 0
 .blog
 	background route66
 	border-radius 5px 
@@ -100,7 +119,7 @@ ul
 	top .3em
 	display none
 	top 92%
-	z-index: 2
+	z-index: 3
 .vol 
 	&:before
 		color BC
@@ -152,6 +171,8 @@ ul
 	li
 		padding .5em 0
 
+
+
 #about 
 #description
 	border-bottom solid 1px route66
@@ -161,3 +182,17 @@ ul
 #futuro
 #tecnologies
 	border-bottom solid 1px route66
+	
+@media screen and (min-width: 768px)
+	aside
+		z-index: 1
+	#about 
+	#description
+	#formacion
+	#trabajos
+	#futuro
+	#tecnologies
+	#contratame
+		margin-left: 330px
+	footer
+		z-index: 2
