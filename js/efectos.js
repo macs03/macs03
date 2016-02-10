@@ -5,27 +5,21 @@ $(document).ready(function  () {
 		var altura = $(document).scrollTop();
 		if (altura === 0) {
 			$("#arriba").hide("swing");
-			
+
 		}
-		
-	});
-	
-	$('#ingles').click(function() {
-		$.ajax({
-			url: 'ingles.html',
-			success: function(data) {
-				$('#body').html(data);
-				$('#body').slideDown(1000);
-			}
-		});
-	});
-	$('#spanish').click(function() {
-		$.ajax({
-			url: 'index.html',
-			success: function(data) {
-				$('#body').html(data);
-				$('#body').slideDown(1000);
-			}
-		});
+
 	});
 });
+
+setTimeout(function () {
+	$("a.toplink").click(function() {
+		$("html, body").animate({
+			scrollTop: $($(this).attr("href")).offset().top + "px"
+		}, {
+			duration: 1000,
+			easing: "swing"
+		});
+	return false;
+	});
+
+},4000);
